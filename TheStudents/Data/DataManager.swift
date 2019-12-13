@@ -82,7 +82,7 @@ class DataManager {
     
     func getCoins(index: Int) -> Int {
           return self.coins[Int.random(in: 0...4)]
-      }
+    }
     
     func getGender() -> Gender {
         return Gender(rawValue: genders[Int.random(in: 0...1)])!

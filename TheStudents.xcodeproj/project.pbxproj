@@ -75,8 +75,8 @@
 				441D919223A37C24004A3DBD /* AppDelegate.swift */,
 				441D919423A37C24004A3DBD /* SceneDelegate.swift */,
 				441D919823A37C24004A3DBD /* Main.storyboard */,
-				441D919B23A37C2F004A3DBD /* Assets.xcassets */,
 				441D919D23A37C2F004A3DBD /* LaunchScreen.storyboard */,
+				441D919B23A37C2F004A3DBD /* Assets.xcassets */,
 				441D91A023A37C2F004A3DBD /* Info.plist */,
 			);
 			path = TheStudents;
