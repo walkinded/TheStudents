@@ -79,6 +79,28 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailOfStudentViewController") as! DetailOfStudentViewController
+        if indexPath.section == 0{
+            if let student = self.students[indexPath.row] as? Student {
+                vc.student = student
+            }
+        }
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
+extension ViewController: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
+    
+    private func filterContentForSearchText(_ searchText: String) {
+        
+        searchStudent = students.filter({ (students: Student) -> Bool in
+            return (students.name!.lowercased().range(of: searchText.lowercased()) != nil)
+        })
+        
+        TableView.reloadData()
+    }
+}

@@ -19,6 +19,7 @@ class Student {
     var gender: Gender!
     var photo: String?
     var position: String?
+    var coins: Int?
     
     
     init(index: Int) {
@@ -29,5 +30,6 @@ class Student {
         self.position = tmpName.position
         self.years = manager.getYears(index: index)
         self.photo = manager.getPhoto(gender: gender)
+        self.coins = manager.getCoins(index: index)
     }
 }

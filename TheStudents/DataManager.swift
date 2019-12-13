@@ -13,12 +13,17 @@ class DataManager {
     
     // MARK --
     // MARK: Arry of Students
-    let surname = [
+    let lastname = [
         "Опранов", "Олмин", "Полин", "Литерин", "Гирин", "Килента", "Гартер", "Кумарин", "Линтест", "Моськин"
     ]
+    let lastnameGirl = "a"
     let years = [
         17, 18, 19, 20, 21
     ]
+    
+    let coins = [
+           1, 2, 3, 4, 5
+       ]
     
     let position = ["студент", "студентка"]
     
@@ -60,12 +65,16 @@ class DataManager {
     
     //Student
     func getSurnameStudent(index: Int) -> String {
-        return self.surname[index]
+        return self.lastname[index]
     }
     
     func getYears(index: Int) -> Int {
         return self.years[Int.random(in: 0...4)]
     }
+    
+    func getCoins(index: Int) -> Int {
+          return self.coins[Int.random(in: 0...4)]
+      }
     
     func getGender() -> Gender {
         return Gender(rawValue: genders[Int.random(in: 0...1)])!
@@ -73,9 +82,9 @@ class DataManager {
     
     func getFioStudent(gender: Gender) -> (name: String?, surname: String?, position: String?){
         if gender == .male{
-            return (self.nameBoy[Int.random(in: 0...9)], self.surname[Int.random(in: 0...4)], self.position[0])
+            return (self.nameBoy[Int.random(in: 0...9)], self.lastname[Int.random(in: 0...4)], self.position[0])
         }else{
-            return (self.nameGirl[Int.random(in: 0...9)], self.surname[Int.random(in: 0...4)], self.position[1])
+            return (self.nameGirl[Int.random(in: 0...9)], self.lastname[Int.random(in: 0...4)], self.position[1])
         }
     }
 }

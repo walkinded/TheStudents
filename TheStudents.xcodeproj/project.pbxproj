@@ -17,6 +17,7 @@
 		441D91A923A37DC4004A3DBD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D91A823A37DC3004A3DBD /* DataManager.swift */; };
 		441D91AB23A37E15004A3DBD /* GenderExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D91AA23A37E15004A3DBD /* GenderExtentions.swift */; };
 		441D91AD23A38683004A3DBD /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D91AC23A38683004A3DBD /* StudentTableViewCell.swift */; };
+		44F74F4A23A3B60B00356C60 /* DetailOfStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F74F4923A3B60B00356C60 /* DetailOfStudentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		441D91A823A37DC3004A3DBD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		441D91AA23A37E15004A3DBD /* GenderExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderExtentions.swift; sourceTree = "<group>"; };
 		441D91AC23A38683004A3DBD /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		44F74F4923A3B60B00356C60 /* DetailOfStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOfStudentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				441D919623A37C24004A3DBD /* ViewController.swift */,
 				441D91AC23A38683004A3DBD /* StudentTableViewCell.swift */,
 				441D919823A37C24004A3DBD /* Main.storyboard */,
+				44F74F4923A3B60B00356C60 /* DetailOfStudentViewController.swift */,
 				441D919B23A37C2F004A3DBD /* Assets.xcassets */,
 				441D919D23A37C2F004A3DBD /* LaunchScreen.storyboard */,
 				441D91A023A37C2F004A3DBD /* Info.plist */,
@@ -154,6 +157,7 @@
 				441D919323A37C24004A3DBD /* AppDelegate.swift in Sources */,
 				441D91A923A37DC4004A3DBD /* DataManager.swift in Sources */,
 				441D91AB23A37E15004A3DBD /* GenderExtentions.swift in Sources */,
+				44F74F4A23A3B60B00356C60 /* DetailOfStudentViewController.swift in Sources */,
 				441D91AD23A38683004A3DBD /* StudentTableViewCell.swift in Sources */,
 				441D91A723A37D13004A3DBD /* StudentsClass.swift in Sources */,
 				441D919523A37C24004A3DBD /* SceneDelegate.swift in Sources */,
