@@ -28,7 +28,7 @@ class StudentTableViewCell: UITableViewCell {
     
     func setupWith(_ student: Student) {
            self.name.text = student.name
-           self.lastname.text = student.surname
+           self.lastname.text = student.lastname
            if student.photo != nil{
                self.img.image = UIImage(named: student.photo!)
            }

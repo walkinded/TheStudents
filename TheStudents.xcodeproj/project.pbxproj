@@ -17,6 +17,7 @@
 		441D91A923A37DC4004A3DBD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D91A823A37DC3004A3DBD /* DataManager.swift */; };
 		441D91AB23A37E15004A3DBD /* GenderExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D91AA23A37E15004A3DBD /* GenderExtentions.swift */; };
 		441D91AD23A38683004A3DBD /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441D91AC23A38683004A3DBD /* StudentTableViewCell.swift */; };
+		449BFEFF23A3EE4F00F45050 /* WebAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BFEFE23A3EE4F00F45050 /* WebAddressViewController.swift */; };
 		44F74F4A23A3B60B00356C60 /* DetailOfStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F74F4923A3B60B00356C60 /* DetailOfStudentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		441D91A823A37DC3004A3DBD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		441D91AA23A37E15004A3DBD /* GenderExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderExtentions.swift; sourceTree = "<group>"; };
 		441D91AC23A38683004A3DBD /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		449BFEFE23A3EE4F00F45050 /* WebAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAddressViewController.swift; sourceTree = "<group>"; };
 		44F74F4923A3B60B00356C60 /* DetailOfStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOfStudentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				441D91A623A37D13004A3DBD /* StudentsClass.swift */,
 				441D91A823A37DC3004A3DBD /* DataManager.swift */,
 				441D91AA23A37E15004A3DBD /* GenderExtentions.swift */,
+				449BFEFE23A3EE4F00F45050 /* WebAddressViewController.swift */,
 			);
 			path = TheStudents;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				441D919723A37C24004A3DBD /* ViewController.swift in Sources */,
 				441D919323A37C24004A3DBD /* AppDelegate.swift in Sources */,
 				441D91A923A37DC4004A3DBD /* DataManager.swift in Sources */,
+				449BFEFF23A3EE4F00F45050 /* WebAddressViewController.swift in Sources */,
 				441D91AB23A37E15004A3DBD /* GenderExtentions.swift in Sources */,
 				44F74F4A23A3B60B00356C60 /* DetailOfStudentViewController.swift in Sources */,
 				441D91AD23A38683004A3DBD /* StudentTableViewCell.swift in Sources */,

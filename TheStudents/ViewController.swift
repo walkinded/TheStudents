@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     
     let manager = DataManager.shared
     
+    
+    // MARK: Search
     private let searchController  = UISearchController(searchResultsController: nil)
     private var searchBarIsEmpty: Bool {
         guard let text = searchController.searchBar.text else {return false}
@@ -29,9 +31,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        //Search Conroller
+        // MARK: Search Conroller
         searchController.searchResultsUpdater = self as? UISearchResultsUpdating
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Поиск"
@@ -44,13 +45,20 @@ class ViewController: UIViewController {
             self.students.append(student)
         }
     }
+    
+    // MARK: StatusBar Color
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
 
 
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
          if section == 0{
             if isFiltering {
                 return searchStudent.count
@@ -58,26 +66,28 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 return students.count
             }
         }
-      return section
+        
+        return section
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! StudentTableViewCell
         cell.selectionStyle = .none
-             
-         var searchS: Student
+        
+        var searchS: Student
          
-         if indexPath.section == 0{
+        if indexPath.section == 0{
             if isFiltering {
                 searchS = searchStudent[indexPath.row]
             }else{
                 searchS = students[indexPath.row]
             }
             cell.setupWith(searchS)
-         }
+        }
         return cell
     }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailOfStudentViewController") as! DetailOfStudentViewController

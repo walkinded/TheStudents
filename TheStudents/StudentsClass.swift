@@ -14,7 +14,7 @@ class Student {
     let manager = DataManager.shared
     
     var name: String?
-    var surname: String?
+    var lastname: String?
     var years: Int?
     var gender: Gender!
     var photo: String?
@@ -26,7 +26,7 @@ class Student {
         self.gender = manager.getGender()
         let tmpName = manager.getFioStudent(gender: gender)
         self.name = tmpName.name
-        self.surname = tmpName.surname
+        self.lastname = tmpName.lastname
         self.position = tmpName.position
         self.years = manager.getYears(index: index)
         self.photo = manager.getPhoto(gender: gender)
